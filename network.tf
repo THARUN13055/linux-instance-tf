@@ -22,7 +22,7 @@ resource "azurerm_network_interface" "terraform" {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.terraform.id
     private_ip_address_allocation = "Dynamic"
-    public_ip_address= azurerm_public_ip.terraform.id
+    public_ip_address_id          = azurerm_public_ip.terraform.id
   }
 }
 
